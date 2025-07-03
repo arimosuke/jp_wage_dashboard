@@ -1,6 +1,5 @@
 
 import pandas as pd
-import numpy as np
 import streamlit as st
 import pydeck as pdk
 import plotly.express as px
@@ -113,3 +112,6 @@ fig = px.bar(df_mean_categ,
              width=800,
              height=500)
 st.plotly_chart(fig)
+
+st.text('出典：RESAS（地域経済分析システム）')
+st.text('本結果はRESAS（地域経済分析システム）を加工して作成')
